@@ -436,7 +436,7 @@ def navi_alert(CP: car.CarParams, CS: car.CarState, sm: messaging.SubMaster, met
     tr(193) if IS_WAZE else tr(95),
     "",
     AlertStatus.normal, AlertSize.small,
-    Priority.LOW, VisualAlert.none, AudibleAlert.none, .5)
+    Priority.LOW, VisualAlert.none, AudibleAlert.wazeAlert, 1.)
 
 def longitudinal_maneuver_alert(CP: car.CarParams, CS: car.CarState, sm: messaging.SubMaster, metric: bool, soft_disable_time: int, personality) -> Alert:
   ad = sm['alertDebug']
